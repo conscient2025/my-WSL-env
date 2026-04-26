@@ -52,3 +52,10 @@ git add .
 git commit -m "..."
 git push -u origin main
 ```
+
+之后就可以直接使用
+
+```bash
+git pull
+git push
+```
