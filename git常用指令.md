@@ -21,3 +21,11 @@ git log --oneline
 ```bash
 git log --oneline --graph --all
 ```
+
+更新并对齐 origin/main
+
+```bash
+git fetch origin
+git switch main
+git pull --rebase origin main
+```
