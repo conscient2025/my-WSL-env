@@ -33,9 +33,22 @@ git branch -M main
 git push -u origin main
 ```
 
-这里 -u 很重要，它会建立本地 main 和远程 origin/main 的跟踪关系。以后你就可以直接用：
+如果报错 the remote contains work that you do not hint: have locally，执行
 
 ```bash
-git push
-git pull
+git pull --no-rebase origin main --allow-unrelated-histories
+```
+
+先看
+
+```bash
+git status
+```
+
+修改冲突文件，接着执行
+
+```bash
+git add .
+git commit -m "..."
+git push -u origin main
 ```
