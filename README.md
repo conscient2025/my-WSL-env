@@ -21,4 +21,21 @@ git remote add origin git@github.com:conscient2025/<repo-name>.git
 git remote -v
 ```
 
+把本地分支改成 main：
 
+```bash
+git branch -M main
+```
+
+第一次推送到远程 private 仓库
+
+```bash
+git push -u origin main
+```
+
+这里 -u 很重要，它会建立本地 main 和远程 origin/main 的跟踪关系。以后你就可以直接用：
+
+```bash
+git push
+git pull
+```
