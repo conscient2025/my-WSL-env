@@ -29,5 +29,3 @@ git fetch origin
 git switch main
 git pull --rebase origin main
 ```
-
-I found a love.
